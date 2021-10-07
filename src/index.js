@@ -1,3 +1,4 @@
 import './style.scss';
+import display from './display';
 
-console.log('Webpack works!');
+display();
