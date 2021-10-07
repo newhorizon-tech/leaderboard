@@ -41,3 +41,8 @@ Feel free to check the [issues page](https://github.com/newhorizon-tech/leaderbo
 ## Show your support
 
 Give a ⭐️ if you like this project!
+
+
+## License
+
+GNU General Public License, version 3 (GPL-3.0)
