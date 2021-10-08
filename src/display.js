@@ -1,11 +1,19 @@
-const display = () => {
+import { getData } from './api-interface';
+
+const display = async () => {
   const listElement = document.querySelector('#list');
 
-  for (let i = 1; i <= 10; i += 1) {
-    const scoreElement = document.createElement('li');
-    scoreElement.textContent = `John: ${i * 10}`;
-    listElement.appendChild(scoreElement);
-  }
+  const data = await getData();
+
+  const leaderboard = data.result;
+  listElement.textContent = '';
+
+  Object.keys(leaderboard).forEach((key) => {
+    const listItem = document.createElement('li');
+    const { user, score } = leaderboard[key];
+    listItem.textContent = `${user}: ${score}`;
+    listElement.appendChild(listItem);
+  });
 };
 
 export default display;
