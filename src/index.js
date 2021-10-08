@@ -1,7 +1,7 @@
 import './style.scss';
 import display from './display';
 
-import { postData } from './api-interface';
+import { postData, setGameID } from './api-interface';
 
 const newScoreBtn = document.querySelector('#new-score');
 const scoreInput = document.querySelector('#score');
@@ -21,10 +21,13 @@ newScoreBtn.addEventListener('click', () => {
     user: newName,
     score: newScore,
   };
-  postData(scoreObj);
+  postData('new-score', scoreObj);
   clearInput();
 });
 
-refreshBtn.addEventListener('click', display);
+document.addEventListener('DOMContentLoaded', () => {
+  setGameID();
+  display();
+});
 
-document.addEventListener('DOMContentLoaded', display);
+refreshBtn.addEventListener('click', display);
