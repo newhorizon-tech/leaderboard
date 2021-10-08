@@ -5,7 +5,7 @@
   "main": "webpack.config.js",
   "scripts": {
     "build": "npx webpack",
-    "start": "npx webpack serve"
+    "start": "npx webpack serve --open"
   },
   "repository": {
     "type": "git",
