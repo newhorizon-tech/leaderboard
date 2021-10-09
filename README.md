@@ -14,10 +14,6 @@ A simple leaderboard project
 - Javascript (ES6)
 - Atom
 
-<!-- ## Live Demo
-
-[To Do List Demo](https://newhorizon-tech.github.io/todo/dist/) -->
-
 ## Getting Started
 
 - Clone the repository
@@ -32,11 +28,16 @@ A simple leaderboard project
 - Github: [@newhorizon-tech](https://github.com/newhorizon-tech)
 - Twitter: [@techintosh3](https://twitter.com/techintosh3)
 
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](https://github.com/newhorizon-tech/leaderboard/issues).
+
+## Acknowledgement
+ 
+The project uses Microverse's Leaderboard API
 
 ## Show your support
 
